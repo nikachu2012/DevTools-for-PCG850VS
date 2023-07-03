@@ -62,7 +62,7 @@ export default function writeSIO() {
 
                             console.log(convertedText.join("\r\n"))
 
-                            serialport.write(encode(convertedText.join("\r\n"), "SJIS"), 'binary', (error) => {
+                            serialport.write(encode(convertedText.join("\r\n") + "\x1a", "SJIS"), 'binary', (error) => {
                                 if (error === null || error === undefined) {
                                     // 書き込み成功
                                     vscode.window.showInformationMessage(`データを${selectedCommand.label}ポートに書き込みました。`)
