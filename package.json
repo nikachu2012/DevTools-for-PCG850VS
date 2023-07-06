@@ -2,7 +2,11 @@
   "name": "devtools-for-pc-g850vs",
   "displayName": "DevTools for PC-G850VS",
   "description": "VSCodeでのポケコン開発をしやすくしています。",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nikachu2012/DevTools-for-PCG850VS"
+  },
   "engines": {
     "vscode": "^1.79.0"
   },
